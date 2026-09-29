@@ -1,0 +1,9 @@
+{
+  "total_transactions": 590540,
+  "fraud_count": 20663,
+  "legit_count": 569877,
+  "fraud_rate_pct": 3.5,
+  "avg_fraud_amt": 149.24,
+  "avg_legit_amt": 134.51,
+  "dataset": "IEEE-CIS"
+}

@@ -1,0 +1,81 @@
+{
+  "version": "2.0",
+  "source": "IEEE-CIS train_transaction.csv (all 590,540 rows)",
+  "thresholds": {
+    "baseline_fraud_rate": 3.5,
+    "high_risk_level": 7.0,
+    "high_risk_hours": {
+      "start": 5,
+      "end": 9,
+      "peak": 7,
+      "peak_rate": 10.61,
+      "label": "05:00-10:00"
+    },
+    "hourly_rates": {
+      "0": 3.14,
+      "1": 3.13,
+      "2": 3.75,
+      "3": 3.83,
+      "4": 5.19,
+      "5": 7.03,
+      "6": 7.77,
+      "7": 10.61,
+      "8": 9.3,
+      "9": 9.0,
+      "10": 5.32,
+      "11": 3.88,
+      "12": 3.04,
+      "13": 2.29,
+      "14": 2.42,
+      "15": 2.54,
+      "16": 2.95,
+      "17": 3.15,
+      "18": 3.52,
+      "19": 3.47,
+      "20": 3.43,
+      "21": 3.4,
+      "22": 3.27,
+      "23": 3.7
+    },
+    "amount_bands": {
+      "low": {
+        "max": 100,
+        "fraud_rate": 3.47
+      },
+      "medium": {
+        "min": 100,
+        "max": 500,
+        "fraud_rate": 3.4
+      },
+      "high": {
+        "min": 500,
+        "max": 2000,
+        "fraud_rate": 4.97
+      },
+      "very_high": {
+        "min": 2000,
+        "fraud_rate": 2.06
+      }
+    },
+    "high_risk_email_domains": [
+      "mail.com",
+      "outlook.com"
+    ],
+    "common_safe_domains": [
+      "yahoo.com",
+      "anonymous.com",
+      "aol.com",
+      "comcast.net",
+      "icloud.com"
+    ],
+    "email_rates": {
+      "mail.com": 18.96,
+      "outlook.com": 9.46,
+      "yahoo.com": 2.28,
+      "anonymous.com": 2.32,
+      "aol.com": 2.18,
+      "comcast.net": 3.12,
+      "icloud.com": 3.14
+    }
+  }
+}

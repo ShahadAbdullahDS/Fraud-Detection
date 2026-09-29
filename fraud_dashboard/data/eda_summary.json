@@ -1,0 +1,67 @@
+{
+  "findings": [
+    {
+      "title": "Dataset coverage",
+      "title_ar": "حجم البيانات",
+      "value": "590,540",
+      "body": "Analysis covers 590,540 transactions from the IEEE-CIS training dataset.",
+      "body_ar": "التحليل يغطي 590,540 معاملة من مجموعة بيانات IEEE-CIS.",
+      "interpretation": "The review is based on the available evaluation dataset.",
+      "interpretation_ar": "المراجعة مبنية على مجموعة البيانات المتاحة."
+    },
+    {
+      "title": "Baseline fraud rate",
+      "title_ar": "معدل الاحتيال الأساسي",
+      "value": "3.5%",
+      "body": "Only 3.5% of all transactions are fraudulent, meaning 96.5% are legitimate.",
+      "body_ar": "3.5% فقط من المعاملات احتيالية، أي أن 96.5% شرعية.",
+      "interpretation": "Fraud is rare overall, so raw counts can be misleading.",
+      "interpretation_ar": "الاحتيال نادر بشكل عام، لذا الأعداد المطلقة قد تكون مضللة."
+    },
+    {
+      "title": "Highest-risk hour",
+      "title_ar": "ساعة الذروة",
+      "value": "07:00",
+      "body": "Hour 07:00 has the highest observed fraud rate at 10.6%.",
+      "body_ar": "الساعة 07:00 تسجّل أعلى معدل احتيال بنسبة 10.6%.",
+      "interpretation": "This hour has the highest observed fraud rate.",
+      "interpretation_ar": "هذه الساعة تسجّل أعلى معدل احتيال مُلاحظ."
+    },
+    {
+      "title": "Peak fraud rate",
+      "title_ar": "أعلى معدل احتيال",
+      "value": "10.6%",
+      "body": "The peak fraud rate is 10.6%, about 3.0x the daily baseline.",
+      "body_ar": "أعلى معدل احتيال هو 10.6%، أي حوالي 3.0 أضعاف المعدل اليومي.",
+      "interpretation": "Risk is materially above the daily baseline at the peak.",
+      "interpretation_ar": "المخاطر أعلى بكثير من المعدل اليومي في أوقات الذروة."
+    },
+    {
+      "title": "High-risk window",
+      "title_ar": "نافذة المخاطر العالية",
+      "value": "05:00-10:00",
+      "body": "Hours with a fraud rate of at least 7.0% (2x the baseline) run from 05:00-10:00.",
+      "body_ar": "الساعات اللي معدل احتيالها 7.0% أو أكثر (ضعف المعدل الأساسي) تمتد من 05:00-10:00.",
+      "interpretation": "Elevated rates are concentrated in a specific period.",
+      "interpretation_ar": "المعدلات المرتفعة تتركز في فترة زمنية محددة."
+    },
+    {
+      "title": "Average fraud amount",
+      "title_ar": "متوسط مبلغ الاحتيال",
+      "value": "$149",
+      "body": "Fraudulent transactions average $149 versus $135 for legitimate ones.",
+      "body_ar": "متوسط المعاملات الاحتيالية 149$ مقابل 135$ للشرعية.",
+      "interpretation": "Fraud transactions are on average about 11% larger.",
+      "interpretation_ar": "المعاملات الاحتيالية أكبر في المتوسط بحوالي 11%."
+    }
+  ],
+  "peak_hour": 7,
+  "peak_rate": 10.61,
+  "baseline_rate": 3.5,
+  "high_risk_level": 7.0,
+  "high_risk_window": {
+    "start": 5,
+    "end": 9,
+    "label": "05:00-10:00"
+  }
+}
